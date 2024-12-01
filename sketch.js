@@ -1,8 +1,12 @@
 function setup() {
-  createCanvas(600, 600, WEBGL);
+  createCanvas(
+    document.documentElement.clientWidth,
+    document.documentElement.clientHeight,
+    WEBGL
+  );
   cam1 = createCamera();
-  cam1.move(100, 100, 100)
-  cam1.lookAt(0,0,0)
+  cam1.move(100, 100, 100);
+  cam1.lookAt(0, 0, 0);
   cam1.upY = -1;
 }
 
